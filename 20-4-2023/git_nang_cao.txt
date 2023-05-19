@@ -1,0 +1,28 @@
+code nhóm với git
+- dự án có giảng viên là trưởng nhóm, các học viên là các thành viên của dự án
++ công việc của trưởng nhóm:
+- Khơi tạo 1 repo chứa source ban đầu của dự án ở dạng private
+- add các thành viên nhóm vào dự án
+vào repository -> setting -> Collaborators -> add people
++ công việc của thành viên:tạo 1 file 
+ten_cua_ban.txt,nội fung file là: chào bạn: tên
+lấy source code của dự án về: git clone
+- di chuyển vào thư mục vừa clone : cd php0423e2_teamwork
+- git checkout main : checkout về nhánh chính
+- cập nhật code mới nhất từ repo về nhánh chính :git pull origin main
+- tạo 1 nhánh/branch mới trên nhánh chính của repo,hiện tại là nhánh main/ là nhánh chính chứa code hoàn thiện nhất để bàn giao cho khách hàng
+git branch feature_tuan -> tạo nhánh
+git branch -> liệt kê các nhánh đang có
+- chuyển sang nhánh bạn vừa tạo để code
+git checkout feature_tuan git add, git commit,git push đẩy file lên
+Nguyên tắc khi push: luôn push lên nhánh hiện tại đang code: git push origin main feature_tuan
+
+Các lệnh
+echo chào bạn:ten_cua_ban >ten_cua_ban.txtgit status
+git add .
+git commit -m "ten_cua_ban commit"
+git push origin nhánh_của_bạn
+
+
+- Tạo Pull request/Merge request để yêu cầu gộp vào nhánh chính
+sau khi tạo pull request,sẽ gửi cho techlead review code,nếu ok thì techlead  sẽ merge vào nhánh chính -> kết thuchs task và làm các task tiếp theo

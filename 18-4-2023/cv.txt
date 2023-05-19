@@ -1,0 +1,20 @@
+- Hướng dẫn viết cv/Hồ sơ xin việc	
++ tham khảo mẫu cv trên mạng,file cv ở dạng pdf khi gửi cho tuyển dụng
++nội dung trong cv cần chú ý vào kinh nghiệm làm việc và kỹ năng cơ bản
+-kn làm việc:với beginner thì tập trung vào đồ án cuối khóa/bài tập lớn hoặc project đã làm
+vd:web bán hàng:
+công nghệ :php,mysql,html,css,javascript
+vị trí:dev + test
+chức năng đã thực hiện:login/register,giỏ hàng..
+teamsize:5
+quản lý source code: git
+
+2 - làm việc để cv tới hr nhah nhất?
++ cách thụ động:lên trang tìm việc, tạo cv online và để đó,HR-> với fresher
++ cách chủ động: Chủ động lên các trang tìm việc để gửi CV -> lâu không có phản hồi
+Tham gia các gruop trên mạng xã hội về lập trình -> chủ động inbox cho HR
+3 - kinh nghiệm phỏng vấn:
++	Tác phong: lịch sự,không đến muộn
++	Trả lời câu hỏi pv: cần tìm hiểu về cty trước ->search gg
+search câu hỏi phỏng vấn cơ bản
++	Deal lương: Đưa ra 1 mức lương cụ thể phù hợp

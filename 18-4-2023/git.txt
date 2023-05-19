@@ -1,0 +1,21 @@
+kỹ năng cơ bản về git:
+ 1 - Git là gì, tại sao cần dùng Git?
+ + là công cụ giúp quản lý source code và code nhóm hiệu quả
+ Bài toán: nếu không có git, gộp code giữa các thành viên sẽ bị thủ công -> sai sót
+ + có nhiều dịch vụ cung cấp sẵn git: Githuc,
+ 2 - demo quản lý cource code với Git:
+ + Đký tài khoản Github : github.com
+ + tạo repository / kho lưu trữ 
+ liên kết source code hiện tại với repo đã tạo trên github:
+ - cd vào thư mục chưa source code cần liên kết
+ - git init -> khởi tạo trên git trên thư mục hiện tại
+ - liên kết source code hiện tại với repository:git remote add origin https://github.com/quoctuan2051053758/php0423e2_tuan.git
+ - kiểm tra link repo: git remote -v
+ - git status -> ktra trạng thái file/thư mục
+ - git add Đường_dẫn_file -> thêm file cho git quản lý để cbi cho bước commit tiếp theo
+ - git commit -m "nội dung message của bạn" cam kết các thay đổi sau khi git add
+ - git push oringin master -> đẩy các file đã commit lên repo ,tại nhánh master
+
+ - git clone -> sao chép source code từ repo có sẵn
+ - git pull -> cập nhật dữ liệu từ repo về local
+ 

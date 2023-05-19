@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout CSS</title>
+</head>
+<body>
+    <!-- layout web là gì
+    chia trang web thành các phần bố cục
+    Dựng layout là xây dựng cấu trúc hàng/cột
+    Các kỹ thuật dựng layout:
+    + table HTML: khó để responsive trên mobie
+    + CSS Float: có thể dụng nhưng phải fix bị vỡ giao diện
+    + CSS flex: dùng vị đơn giản là linh hoạt
+    + CSS Grid:phúc tạp hơn flex
+        1- thành phần inline và block
+        block: div,h,p,ul,ol
+        inline: b i u span a...
+        - nên sử dụng inline-block thay inline để linh hoạt margin trên dưới
+    -->
+    <style>
+        li{
+            display: inline-block;
+            margin: 0 10px;
+        }
+        .col1{
+            background: red;
+            width: 33%;
+        }
+        .col2{
+            background: green;
+            width: 33%;
+        }
+        .col3{
+            background: yellow;
+            width: 33%;
+        }
+
+        /* sử dụng css để áp dụng kỹ thuật Flexbox: */
+        /* CSS thành phần cha: display:flex */
+
+        /* .col1{
+            display: inline-block;
+        } */
+
+        .row {
+            display: flex;
+
+        }
+        /* - set width cho các thành phần con cho phù hợp,nên set cho đơn vị width là %, 1 hàng có width = 100% */
+        /* mặc định flex luôn luôn giữ các thành phần con nằm trên 1 hàng không quan tâm về kích thước hàng có >100% hay không */
+
+
+
+    </style>
+    <!-- hướng dẫn dựng layout với flexbox:
+    + xác định cấu trúc chuẩn bị dựng là 1 hàng và bao nhiêu cột
+    + tạo 1 cấu trúc HTML cha con tương ứng, số  cột là số thẻ div tương ứng trong thành phần con
+    + demo cấu trúc layout 1 hàng 3 cột bằng nhau
+
+
+    -->
+    <div class="row">
+        <div class="col1">div1</div>
+        <div class="col2">div2</div>
+        <div class="col3">div3</div>
+    </div>
+
+
+    <div id="div1"">THẻ div</div> text test
+    <b id="b1">thẻ b</b> text test thẻ b
+    <ul>
+        <li><a href="#">link 1</a></li>
+        <li><a href="#">link 2</a></li>
+        <li><a href="#">link 3</a></li>
+    </ul>
+</body>
+</html>

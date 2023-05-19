@@ -1,0 +1,7 @@
+js_basic.txt
+chuyên đề 2: kiến thức nền tảng của ngôn ngữ lập trình
+- giúp làm quen với các kiến thức,khái niệm nền tảng của 1 ngôn ngữ lập trình bất ký:biến, hằng, hàm
+- sử dụng ngôn ngữ lập trình javascript để demo
+- học js theo 2 hướng:
++ làm quen với ngôn ngữ lập trình
++ thiết kế web

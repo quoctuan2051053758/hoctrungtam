@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tiêu đề</title>
+</head>
+<body>
+    <!-- h1...h6 thẻ tiêu đề, đầy đủ, heading,tốt cho SEO web -->
+    <h1>thẻ h1</h1>
+    <h2>thẻ h2</h2>
+    <h3>thẻ h3</h3>
+    <h4>thẻ h4</h4>
+    <h5>thẻ h5</h5>
+    <h6>thẻ h6</h6>
+    <!-- thẻ p đoạn văn, đầy đủ -->
+    <p>sjdgfiashfilashfaslhflashfashkl</p>
+    <p>sjdgfiashfilashfaslhflashfashkl</p>
+    <!-- thẻ br-> xuống dòng trong file,khuyết -->
+    tôi là <br>
+    aaaaa
+    <!-- thẻ hr - tạo ra 1 đường ngang-khuyết -horizontal -->
+    <hr>
+    <!-- thẻ b-bôi đậm,đầy đủ - bold 
+    thẻ i - in nghiêng,đầy đủ-italic
+    thẻ u - gạch chân,đầy đủ- underline-->
+    <b>thẻ b</b>
+    <i>thẻ i</i>
+    <u>thẻ uu</u>
+    <!-- thẻ div - chia các khối,dùng để xây dựng cấu trúc/ bố cục trang - đầy đủ - divide -->
+    <div>thẻ div</div>
+    <div>
+        <u>thẻ u</u>
+        <h1>thẻ h1</h1>
+    </div>
+    <!-- span - css cho text ngang hàng,đầy đủ -->
+    <span>thẻ span</span>
+    màu này là màu <span style="color: red;">đỏ</span>
+
+    <!-- thẻ img - hiển thị hình ảnh - image
+    + src :đường dẫn tới file ảnh - source
+    copy 1 file ảnh bất kỳ cùng cấp/ ngang hàng với file .html hiện tại
+    có 2 kiểu đường dẫn:
+    Tuyệt đối/vật lý: c:abc/test.jpg
+    tương đối:test.jpg  
+    alt -->
+    <img src="image/1.jpg" alt="hiển thị text"
+    title="hiển thị khi rê chuột qua ảnh"
+    width="100px"
+    height="100px">
+    <!-- thẻ table - tr - th - td - cấu trúc bảng - đầy đủ 
+    tr - hàng của bảng - table row 
+    th - cột tiêu đề của bảng - table heading
+    td - cột dữ liệu của bảng - table data -->
+        <br><br><br>
+    <table border="1" cellspacing="0" cellpadding ="10">
+        <tr>
+            <th>tên</th>
+            <th>tuổi</th>
+        </tr>
+        <tr>
+            <!-- gộp cột, đứng từ vị trí cột colspan,
+            khi gộp cột xong phải xóa đi cột dưa thừa tương ứng -->
+            <td colspan="2">tuan</td>
+            <!-- <td>20</td> -->
+        </tr>
+        <tr>
+            <!-- gộp hàng: đứng từ vị trí cột bắt đầu gộp theo hàng
+            xóa cột ở hàng tiếp theo để giữ cấu trúc -->
+            <td rowspan="2">tau</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>t2u</td>
+            <!-- <td>12</td> -->
+        </tr>  
+    </table>
+
+    <!-- thẻ ul ol li - danh sách, đầy đủ 
+    ul - onorder list
+    ol - order list
+    li - list item-->
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+
+    <ol>     
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ol>
+    <!-- thẻ a - link - đầy đủ - anchor -->
+    <a href="https://www.google.com/?hl=vi "target="_blank">vào face nhóm pod</a>
+    <!-- thẻ center - căn giữa - đầy đủ - chỉ dùng với html -->
+    <center>thẻ center</center>
+    <!-- thẻ button - nút - đầy đủ -->
+    <button>aaa</button>
+    <!-- thẻ form,input,textarea,select,option : form -->
+    <br><br><br>
+    <form action="input" method="post">
+        Nhập text 
+        <input type="text" placeholder="Nhập text bất kì" value="ádasds"><br>
+        nhập số:
+        <input type="number"><br>
+        Nhập email
+        <input type="email"><br>
+        Nhập mật khẩu
+        <input type="password"><br>
+        Nhập giới tính:
+        <input type="radio" name="gender">Nam
+        <input type="radio" checked name="gender">Nữ
+        <input type="radio" name="gender">Khác
+        <br>
+        Chọn nghề nghiệp:
+        <input type="checkbox" checked>dev
+        <input type="checkbox">test
+        <input type="checkbox">BrSE
+        <br>
+        Chọn quốc gia:
+        <select name="" id="">
+            <option value="">VietNam</option>
+            <option value="">Hàn</option>
+            <option value="">Japan</option>
+        </select>
+        <br>
+        Upload file:
+        <input type="file">
+        <br>
+        Nhập ghi chú trên nhiều hàng:
+        <textarea name="" id="" cols="30" rows="10"></textarea><br>
+        <!-- nút submit form -->
+        <input type="submit" value="Gửi thông tin">
+        <input type="reset" value="reset form">
+    </form>
+
+</body>
+</html>

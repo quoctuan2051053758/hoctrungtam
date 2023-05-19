@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thuộc tính css cơ bản</title>
+</head>
+<body>
+    <style>
+        /* 1-màu nền */
+        #div-bg{
+            /* 2 đơn vị màu cơ bản: đơn sắc và đa sắc(mã hexa gồm 6 kí tự) */
+            /* background-color: #4ea666; */
+        /* background-image: url(1.jpg); */
+        height: 200px;
+        /* background-repeat: no-repeat; */
+        /* background-position: center; */
+        color: white;
+            /* copy 1 ảnh bất kỳ cùng cấp file hiện tại */
+            /* dùng devtool của trình duyệt của css trực quan nhất: F12 hoặc chuột phải chọn Inspect HTML, chọn tab Element */
+            /* viết gộp: */
+        background: #4ea666 url(1.jpg) no-repeat center;
+        /*  */
+        }
+        /* 2 - Font */
+        p#p-font {
+            /* các font family lưu trữ tại C: Windows/Fonts */
+            font-family: arial;
+            font-family: Brush Script Std Medium;
+            font-style: italic;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        /* 3 - text */
+        .h1-text {
+        color: #c39292;
+        text-align: center;
+        text-decoration: underline;
+        text-transform: uppercase;
+        text-shadow: 3px 3px 3px grey;
+        line-height: 30px;
+        }
+
+        /* 4 - border */
+        #h2-border {
+            /* border-style: solid;
+            border-color: red;
+            border-width: 3px; */
+            border-radius: 10px;
+            border: 3px solid red ;
+        }
+
+        /* 5- margin:Khoảng các giữa các đối tượng liền kề nhau */
+        #div1{
+            background: gray;
+
+        }
+        #div2{
+            background: blue;
+            margin-top: 15px;
+            margin-right: 20px;
+            margin-bottom: 30px;
+            margin-left: 30px;
+            margin: 20px;
+            /* trên=dưới =10px , trái phải =20px */
+            margin: 10px 20px;
+            /* top -right - bottom - left */
+
+        }
+        #div3{
+            background: rgb(53, 170, 53);
+        }
+
+        /* 6-padding:Khoảng cách tính từ viền đến nội dung bên trong */
+        #div4{
+            background: green;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+        }
+    </style>
+    <div id="div4">div 4 padding</div>
+    <div id="div1">div1</div>
+    <div id="div2">div2</div>
+    <div id="div3">div3</div>
+    <h2 id="h2-border">thẻ h2</h2>
+    <h1 class="h1-text">Thẻ h1</h1>
+    <!-- /* 2 - Font */ -->
+    <p id="p-font">Thẻ p với css font</p>
+
+
+
+    <div id="div-bg">
+        thẻ div
+    </div>
+    
+</body>
+</html>

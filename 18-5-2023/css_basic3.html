@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css cơ bản</title>
+</head>
+<body>
+    <style>
+        /* width- height */
+        #w-h{
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+        }
+
+        /* 2-position:di chuyển phần tử mà không ảnh hưởng đến xung quanh nó */
+        
+        /* relative: lấy chính nó để căn khi di chuyển */
+        /* absolute: lấy trình duyệt để căn,hay dùng khi muốn 1 phần tử con chỉ di chuyển dựa vào phần tử cha */
+        body{
+            height: 1500px;
+        }
+        #post1{
+            width: 60px;
+            height: 60px;
+            background: red;
+        }
+        /* fixed: vị trí cố định khi cuộn trang: banner quảng cáo */
+        #post2{
+            width: 70px;
+            height: 70px;
+            background: yellow;
+            /* position: fixed;
+            right: 0; */
+
+
+        }
+
+
+        /* con là absolute, cha la relative thì con sẽ luôn luôn di chuyển dựa vào cha */
+        #parent{
+            width: 100px;
+            height: 100px;  
+            background: brown;
+            position: relative;
+        }
+        #child{
+            width: 50px;
+            height: 50px;   
+            background: green;
+            position: absolute;
+            right: 0;
+        }
+
+        /* 3 - overflow: xử lý khi bị tràn nội dung */
+        #ov{
+            width: 50px;
+            background-color: cadetblue;
+            /* overflow: scroll; */
+        }
+
+        /* 4 - opacity: độ mờ: 0 - 1 */
+        /* tranition: hiệu ứng chuyển đôi */
+        #tran{
+            transition: all 2s ease;
+        }
+        #tran:hover{
+            background: green;
+        }
+    </style>
+    <h1 id="tran"> Hover để đổi màu nền</h1>
+
+
+    <div id="ov">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</div>
+
+
+    <div id="parent">
+        <div id="child">child of parent</div>
+    </div>
+
+
+
+    <div id="post1">Div pos1</div> 
+    <div id="post2">div post 2</div>
+
+
+    <div id="w-h">width height</div>
+
+
+
+</body>
+</html>

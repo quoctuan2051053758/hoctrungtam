@@ -1,0 +1,90 @@
+<script>
+    // tích 3 số
+    function b1(a,b,c){
+        return a*b*c;
+    }
+    console.log(b1(1,2,4));
+
+    // tích 2 số
+    function b21(a,b){
+        return a*b;
+    }
+    console.log(b21(2,7));
+
+    // đổi phút sang giây
+    function b3(a){
+        return a*60;
+    }
+    console.log(b3(4));
+
+    // trả về số kế tiếp
+    function b4(a){
+        return ++a;
+    }
+    console.log(b4(3));
+
+    // chu vi hình chữ nhật
+    function b5(a,b){
+        return (a+b)*2;
+    }
+    console.log(b5(2,4));
+
+    // chu vi hình vuông
+    function b6(a){
+        return a*4;
+    }
+    console.log(b6(4));
+
+    // diện tích hình vuông
+    function b7(a){
+        return a*a;
+    }
+    console.log(b7(5));
+
+
+    // kiểm tra số nguyên tố
+    function b8(a){
+        if(a<2){
+            return false;
+        }
+        for(var i=2;i<=Math.sqrt(a);i++)
+        {
+            if (a%i==0)
+            return false;
+        }
+        return true;
+    }
+    console.log (b8(7));
+
+    
+
+    // kiểm tra số chẵn lẻ
+    function b9(a){
+        if(a%2==0)
+        {
+            return (a+' là số chẵn');
+        }
+        else{
+            return (a+' là số lẻ');
+        }
+    }
+    console.log(b9(3));
+
+    // chuyển giờ phút sang giây 
+    function b10(a,b){
+        return a*60*60 +b*60;
+    }
+    console.log(b10(3,30));
+
+    // đảo ngược chuỗi
+    function b11(a){
+        var b ='';
+        for(var i=a.length -1;i>=0;i--){
+             b += a[i];
+        }
+        return b;
+    }
+    console.log(b11('abc'));
+
+
+</script>

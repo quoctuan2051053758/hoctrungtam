@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo layout</title>
+</head>
+<body>
+    <!-- dựng html: nên đặt class cho các phần tử html để css về sau
+        phân tích từ trên xuống dưới trang web, chia làm các thành phần theo từng hàng, nếu hàng nào có từ 2 cột trở lên thì mới áp dụng cấu trúc html row-col để sử dụng flexbox về sau
+
+    - dựng css
+    
+    -->
+
+    <div class="container">
+        <div class="logo">
+            <h1 class="heading">Logo</h1>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+        </div>
+        <div class="Feature">
+            Feature
+        </div>
+        <div class="row">
+            <div class="column">Column One</div>
+            <div class="column">Column Two</div>
+            <div class="column">column three</div>
+        </div>
+        <!-- coppyright html code -->
+        <div class="footer">	&#169;Copyright 2011</div>
+    </div>
+    <style>
+        .container{
+            width: 60%;
+            margin: auto;
+        }
+        /* int */
+        .logo{
+            text-align: center;
+            background: #EFEFEF;
+            padding: 5px 0;
+        }
+        h1.heading{
+            margin: 0;
+        }
+        li{
+            display: inline-block;
+           
+        }
+        .menu{
+            text-align: center;
+            height: 100px;
+            background-color: #EFEFEF;
+        }
+        .row{
+            display: flex;
+        }
+        .column{
+            width: 33.33%;
+            background: #EFEFEF;
+            height: 100px;
+            text-align: center;
+        }
+        .column:nth-child(2){
+            margin: 0 20px;
+        }
+    </style>
+</body>
+</html>
