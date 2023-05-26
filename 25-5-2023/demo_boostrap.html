@@ -1,0 +1,42 @@
+<!-- thư viện boostrap: là 1 thư viện tích hợp sẵn HTML CSS và JS để hỗ trợ giao diện nhanh hơn
+- hỗ trợ reponsive 
+- nhiều nền tảng framwork của PHP cũng tích hợp sẵn Boostrap
+- học bootstrap học 2 chủ đề chính: layout và component
+- demo phiên bản boostrap 4
+- cài đặt bootstrap có 2 cách:
++ tải thủ công
++ dùng link CDN-content delivery network
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>demo_boostrap</title>
+    <style>
+        .col1{background: red;}
+        .col2{background: blue;}
+        .col3{background: green;}
+        .col4{background: yellow;}
+    </style>
+</head>
+<body>
+    <h1>thẻ h1</h1>
+    <!-- dựng layout với boostrap: tham khảo hình trong slide -->
+    <!-- -boostrap dùng flex dựng layout -->
+    <!-- -boostrap coi pc và ipad là 1 pc và ipad 1 hàng 4 cột bằng nhau mobile 4 hàng, mỗi hàng 1 cột -->
+    <div class="container">
+        <div class="row">
+            <div class="col1 col-md-3 col-6">col1</div>
+            <div class="col2 col-md-3 col-6">col2</div>
+            <div class="col3 col-md-3 col-12">col3</div>
+            <div class="col4 col-md-3 col-12">col4</div>
+        </div>
+    </div>
+    <!-- demo component: copy paste -->
+
+</body>
+</html>

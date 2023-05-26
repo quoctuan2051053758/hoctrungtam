@@ -1,0 +1,23 @@
+0 cắt giao diện từ file
+    + chuyển đổi file thiết kế sang HTML
+    + cần chuyển đổi: ảnh, font chữ, màu sắc
+    + Khoảng cách thì chỉ cần chuyển đổi tương đối
+    + cần code giao diện để càng giống file thiết kế càng tốt
+    - demo
+    + các bước cắt giao diện:
+b1: tạo cấu trúc thư mục để lưu thông tin từ file PSD pds_demo/
+    /images: lưu ảnh từ file thiết kế   
+    /fonts: lưu font chữ từ file thiết kết
+    /css /style.css:file CSS chính
+    /js: lưu file .js 
+    index.html: file HTML chính
+B2: cắt ảnh từ file PSD:
+một số thao tác cơ bản với psd 
+Zoom to nhỏ: alt + nút cuộn
+di chuyển tới vùng muốn xem: chọn công cụ move(v) sau đó dùng phím cách và di chuyển
+- ảnh là gì? là không thể dùng html css để tạo ra. Nhược điểm khi cắt ảnh là không có tính linh hoạt, ưu điểm thì dễ
+- cắt ảnh sử dụng crop(c)
++B3: lấy các font từ file thiết kếtsử dụng công cụ Text (T)
+Myriad Pro
+Pacifico(chưa có), cần search gg để tải font này về
++ B4: code HTML CSS

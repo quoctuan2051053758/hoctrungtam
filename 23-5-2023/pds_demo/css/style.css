@@ -1,0 +1,99 @@
+/* nhúng font vào hệ thống */
+@font-face {
+    src: url(../fonts/Pacifico-Regular.ttf);
+    font-family: Pacifico-regular ;
+}
+.header {
+    background: #2f2f2f;
+    padding: 8px 0;
+}
+.container {
+    width: 60%;
+    margin: auto;
+}
+.row{
+    display: flex;
+}
+.logo {
+    width: 40%;
+    color: white;
+    font-size: 40px;
+    font-family: Pacifico-Regular;
+}
+.menu{
+    width: 60%;
+}
+li {
+    display: inline-block;
+    margin-right: 30px;
+    margin-top: 20px;
+}
+body{
+    font-family: Myriad Pro;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.main-top{
+    background: #f1f1f1;
+    padding: 40px 0;
+}
+.article{
+    width: 40%;
+
+}
+.main-img{
+    width: 60%;
+}
+.learn-more{
+    background: #F99640;
+    color: white;
+    padding: 8px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 20px;
+}
+.main-center{
+    padding: 40px 0;
+    
+}
+.item{
+    width: 33.33%;
+    margin: auto;
+}
+.black-div{
+    background: black;
+    height: 100px;
+}
+.item:nth-child(2){
+    margin: 0 30px;
+}
+@media(min-width:768px) and (max-width:1023px){
+
+}
+@media(max-width:767px){
+    /* reponsive trên mobile dựa trên PC, tùy vào con mắt */
+    .header {
+        background: orange;
+        padding: 8px 0;
+    }
+    .row{
+        flex-wrap: wrap;
+    }
+    .logo{
+        width: 100%;
+        text-align: center;
+    }
+    .menu{
+        width: 100%;
+        text-align: center;
+    }
+    .article, .main-img{
+        width: 100%;
+    }
+    .article{
+        margin-bottom: 20px;
+    }
+}
