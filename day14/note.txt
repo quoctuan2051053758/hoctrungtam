@@ -1,0 +1,36 @@
+1/ IDE Code PHPStorm
+- là công cụ code phổ biến với PHP
+- mất phí, có thể crack dùng thử theo hướng dẫn
+2/ ngôn ngữ lập trình PHP:
+- môi trường phát triển web với PHP:
+để website viết bằng PHP có thể chạy được thì bắt buộc phải cài môi trường, gồm 3 thành phần sau:
++ Web server:nơi lưu trữ website,
+2 phần mềm chuyên cài Webserver:apache và Nginx
++ PHP Engline: xử lý mã nguồn PHP
++ Database:lưu trữ dữ liệu, cần thiết cho website động
+Web động: web có tính tương tác và lưu trữ lại dữ liệu của người dùng(PHP,Java,...)
+web tĩnh: các thông tin trên web là web tĩnh, không lưu lại được dữ liệu người dùng(html css javascript)
+-> thay vì cài thủ công sẽ phức tạp với ng mới, thf nên cài các phần mềm có sẵn mà tích hợp cả 3 thành phần trên:
+xampp, wampp,...
+
+-> mô hình Client - server: mô tả cách hoạt động của 3 thành phần trên khi Client giao tiếp với server:
+Client = trình duyệt
+server= PHP
+
+- PHP là gì?
++ là ngôn ngữ lập trình chuyên dùng cho phát triển Web
+API: Application Programming Interface, là cơ chế cho phép nhiều hệ thống khác nhau có thể giao tiếp được với nhau ,Json
++ Hypertext Preprocessor :
++ Sinh ra từ năm 1994, có nhiều phiên bản, mới nhất là 8.X
+Ktra phiên bản PHP đang cài: Xampp -> Shell  php -v
++ Hỗ trợ kết nối tới nhiều CSDL phổ biến: MySQL, SQLServer, oracle, SQLite,MongoDB...
++ Code PHP đc lưu trong file .php
++ code PHP bắt buộc phải lưu trữ trong Webserver
+với xampp, cài webserver là Apache, bắt buộc phải đặt file PHP tại đường dẫn sau: E:/xampp/htdocs
+- DÙng PHPstorm, menufile -> new Project. Location trỏ tới đường dẫn E:/xampp/htdocs/php0423e2_demo
+- để chạy 1 file .php:
+http://<tên miền của server/đường dẫn tới file .php>
+- cần start apache của xampp
+c:/xampp/htdocs/php0423e2_demo/pqtuan.php
+- chạy url sau:
+http://localhost/php0423e2_demo/pqtuan.php
